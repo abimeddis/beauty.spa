@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>SPA BEAUTY</title>
+  </head>
+  <body class="body">
+    <nav id="navbar">
+      <div id="content-navbar">
+        <ul class="navbar-list">
+          <li><a href=".galeria" class="navbar-link">GALERIA</a></li>
+          <li><a href=".products" class="navbar-link">PRODUCTOS</a></li>
+          <li><a href=".box-products" class="navbar-link">BOX</a></li>
+          <li><a href="." class="navbar-link">REGISTRARSE</a></li>
+          <li><a href=".products" class="navbar-link">ACCEDER</a></li>
+        </ul>
+      </div>
+
+      <div class="cart-menu-container">
+        <label for="cart-menu"><i class="bi bi-cart4"></i></label>
+        <input type="checkbox" id="cart-menu" />
+      </div>
+
+      <div id="toggle-menu-container">
+        <label for="toggle-menu"><i class="bi bi-list"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+      </div>
+    </nav>
+
+    <header class="header">
+      <img src="./img/logito-removebg-preview.png" class="img-header" />
+      <button class="ver-mas">Ver más</button>
+    </header>
+
+    <section class="carrousel">
+      <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"></span></div>
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"></span></div>
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"><span></div>
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"></span></div>
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"></span></div>
+              <div class="slide"><span><img src="./img/negativo-beige.png" class="galeria-img"></span></div>
+            </div>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="products">
+      <!-- HARMONY -->
+      <div class="section-producs">
+        <div class="section-text">
+          <h1 class="products-title">Harmony</h1>
+
+          <p class="products-p">Full Experience - Circuito 4 horas</p>
+          <p class="products-p">$22.750 por persona</p>
+          <p class="products-p">IVA incluido</p>
+
+          <ul class="products-ul">
+            <li>Sala de relax</li>
+            <li>Ducha escocesa</li>
+            <li>Piscina climatizada</li>
+            <li>Sauna</li>
+            <li>Masaje descontracturante/relajante de 25 minutos</li>
+            <li>Relax con piedras calientes</li>
+            <li>Tea time</li>
+          </ul>
+
+          <button class="products-btn">Agregar Paquete</button>
+        </div>
+
+        <img src="./harmony.png" class="products-img" />
+      </div>
+      <!--BALANCE-->
+      <div class="section-producs">
+        <img src="./balance.png" class="products-img" />
+
+        <div class="section-text">
+          <h1 class="products-title"">Balance</h1>
+
+          <p class="products-p">Full Experience - Circuito 3 horas</p>
+          <p class="products-p">$12.500 por persona</p>
+          <p class="products-p">IVA incluido</p>
+
+          <ul class="products-ul">
+            <li>Ducha escocesa</li>
+            <li>Piscina climatizada</li>
+            <li>Sauna</li>
+            <li>Masaje descontracturante/relajante de 25 minutos</li>
+            <li>Tea time</li>
+          </ul>
+
+          <button class="products-btn">Agregar Paquete</button>
+        </div>
+      </div>
+
+      <!--RELAX -->
+      <div class="section-producs">
+        <div class="section-text">
+          <h1 class="products-title">Relax</h1>
+
+          <p class="products-p">Full Experience - Circuito 4 horas</p>
+          <p class="products-p">$19.450 por persona</p>
+          <p class="products-p">IVA incluido</p>
+
+          <ul class="products-ul">
+            <li>Sala de relax</li>
+            <li>Ducha escocesa</li>
+            <li>Piscina climatizada</li>
+            <li>Sauna</li>
+            <li>Masaje descontracturante/relajante de 50 minutos</li>
+          </ul>
+
+          <button class="products-btn">Agregar Paquete</button>
+        </div>
+
+        <img src="./relax.png" class="products-img" />
+      </div>
+
+      <!--FRIENDS-->
+      <div class="section-producs">
+        <img src="./friends.png" class="products-img"/>
+
+        <div class="section-text">
+          <h1 class="products-title">Friends</h1>
+
+          <p class="products-p">Reconecta con tus amigos</p>
+          <p class="products-p">$41.850 para 2 personas</p>
+          <p class="products-p">IVA incluido</p>
+
+          <ul class="products-ul">
+            <li>Sala de relax</li>
+            <li>Ducha escocesa</li>
+            <li>Piscina climatizada</li>
+            <li>Sauna</li>
+            <li>Masaje descontracturante/relajante de 25 minutos</li>
+            <li>Relax con piedras calientes</li>
+            <li>Mascarilla facial relajante</li>
+            <li>Tea time</li>
+          </ul>
+
+          <button class="products-btn">Agregar Paquete</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-products"></section>
+
+    <section class="contacto">
+      <div class="contacto-div">
+        <i class="bi bi-geo-alt-fill"></i>
+        <h1 class="contacto-title">DIRECCION</h1>
+        <p class="contacto-p">Pedernera 548 Temperley</p>
+      </div>
+
+      <div class="contacto-div">
+        <i class="bi bi-envelope-paper-fill"></i>
+        <h1 class="contacto-title">RESERVACIONES</h1>
+        <p class="contacto-p">+549 (011) 15-6117-4634</p>
+        <p class="contacto-p">spabeauty@reservaciones.com</p>
+      </div>
+
+      <div class="contacto-div">
+        <i class="bi bi-alarm"></i>
+        <h1 class="contacto-title">HORARIOS</h1>
+        <p class="contacto-p">Todos los días de 9 a 18 hs.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-img">
+        <img src="./img/negativo-beige.png" class="img-footer" />
+        <img src="./img/negativo-rosa.png" class="img-footer" />
+        <img src="./img/negativo-marron.png" class="img-footer" />
+      </div>
+      <p class="footer-p">
+        @Copyright 2023 | Todos los derechos reservados | HURRÜM COMPANY
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

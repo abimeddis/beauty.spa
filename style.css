@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+#navbar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  position: fixed;
+  background-color: #fac49a;
+  z-index: 1;
+  justify-content: center;
+  gap: 30px;
+}
+
+#content-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+  gap: 30px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+  gap: 35px;
+}
+
+.navbar-link {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.cart-menu-container {
+  font-size: 30px;
+  color: black;
+}
+
+.cart-menu-container input {
+  display: none;
+}
+
+#toggle-menu-container {
+  font-size: 30px;
+  color: black;
+  display: none;
+}
+
+/* TOGGLE MENU */
+
+@media (max-width: 800px) {
+  #navbar ul {
+    background-color: rgba(75, 72, 72, 0.9);
+    width: 100%;
+    height: calc(100vh - 50px);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    transform: translateX(200%);
+    transition: all 0.4 ease-out;
+  }
+
+  #toggle-menu-container {
+    display: block;
+  }
+
+  #toggle-menu-container input {
+    display: none;
+  }
+
+  .show {
+    transform: translateX(0%);
+    transition: all 0.4 ease-in;
+  }
+
+  #navbar {
+    justify-content: end;
+  }
+}
+
+/* HEADER */
+
+.header {
+  height: 100vh;
+  background-image: url(./img/fondobeautyspa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ver-mas {
+  padding: 10px 20px;
+  background-color: #f2b999;
+  border: 1px solid black;
+}
+
+.video {
+  height: 55vh;
+}
+
+/*SECTION PRODUCTS */
+
+.section-producs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.products-img {
+  height: 80vh;
+}
+
+.section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.products-btn {
+  padding: 10px 20px;
+  background-color: #f2b999;
+  border: 1px solid black;
+}
+
+.products-title {
+  font-size: 3rem;
+}
+
+.products-p {
+  font-size: 1.7 rem;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.products-ul {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5 rem;
+  gap: 3px;
+}
+
+/* CONTACTO */
+
+.contacto {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacto-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi {
+  font-size: x-large;
+}
+
+/* footer */
+.footer-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-footer {
+  width: 15vw;
+}
+
+.footer-p {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+/*
+
+#BF7B44
+
+#C58874
+
+#BF3F3F
+
+#F2B999
+
+blanco 
+*/
+
+/* GALERIA */
+
+.galeria-img {
+  width: 100%;
+  height: 30vh;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #f2b999;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container {
+  height: 300px;
+  width: 85vw;
+  max-width: 1400px;
+  background: #f2b999;
+
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#slider-container .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 30px;
+  width: 30px;
+  border-left: 8px solid #bf7b44;
+  border-top: 8px solid #bf7b44;
+}
+
+#slider-container .btn:hover {
+  transform: scale(1.2);
+}
+
+#slider-container .btn.inactive {
+  border-color: #bf7b44;
+}
+
+#slider-container .btn:first-of-type {
+  transform: rotate(-45deg);
+  left: 10px;
+}
+
+#slider-container .btn:last-of-type {
+  transform: rotate(135deg);
+  right: 10px;
+}
+
+#slider-container #slider {
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+#slider-container #slider .slide {
+  height: 90%;
+  margin: auto 10px;
+  background-color: #f2b999;
+  box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container #slider .slide span {
+  color: white;
+  font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+  #slider-container #slider .slide {
+    width: calc(2.5% - 20px);
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #slider-container #slider .slide {
+    width: calc(10% - 20px);
+  }
+}
+/* FIN GALERIA */
